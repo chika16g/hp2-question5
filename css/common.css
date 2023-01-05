@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* ===========================================
+
+=========================================== */
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+p,
+li {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+h1,
+h2 {
+  font-size: 3.5rem;
+}
+
+ol{
+  list-style: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+img{
+  vertical-align: bottom;
+}
+
+
+
+.twitter {
+  width: 40px;
+  height: 40px;
+}
+
+.instagram {
+  width: 36px;
+  height: 36px;
+}
+
+.view-more {
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+.view-more a{
+  display: inline-block;
+  padding: 16px 64px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 96%;
+}
+
+/* ===========================================
+ハンバーガーメニュー
+=========================================== */
+/* 
+@media screen and (max-width: 750px){
+
+header .drawer {
+  visibility: visible;
+  width: 24px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-top: solid 4px #000;
+  cursor: pointer;
+  z-index: 100;
+}
+
+header .drawer::before,
+  header .drawer::after {
+  content: "";
+  display: block;
+  width: 24px;
+  background: #000;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+
+header .drawer::before {
+  top: 6px;
+}
+
+header .drawer::after {
+  top: 15px;
+}
+
+body.nav-open header .drawer {
+  border-top: 0;
+}
+
+body.nav-open header .drawer::before {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+body.nav-open header .drawer::after {
+  top: 9px;
+  transform: rotate(45deg);
+} */
+
+/* ===========================================
+ハンバーガーメニュー表示の時の画面はindexへ
+=========================================== */
+
+/* #menu .menu-wrapper {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: #000;
+}
+
+#menu .menu-wrapper__list {
+  display: block;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+#menu .menu-wrapper__list__item {
+  margin: 5% auto;
+  font-size: 1.5rem;
+  line-height: 3;
+}
+
+}
+ */

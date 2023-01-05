@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+/* ===========================================
+header
+=========================================== */
+
+#header{
+  margin-bottom: 5%;
+}
+
+.header-wrapper__flex{
+  display: flex;
+}
+
+.header-wrapper__flex__item img{
+  width: 250px;
+  height: auto;
+}
+
+.header-wrapper__flex__item{
+  position: relative;  /* chill design のタイトルにかかっている */
+}
+
+.header-wrapper__ttl{
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  position: absolute;
+  top: 18%;
+  left: -18%;
+}
+
+.header-wrapper__menu__list{
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper__menu__list__item{
+  margin-top: 25%;
+  margin-left: 7%;
+}
+
+.header-wrapper__menu__list__item:first-child{
+  margin-left: 20%;
+}
+
+.header-wrapper__menu__list img{
+  width: 20px;
+  vertical-align: baseline;
+}
+
+.instagram_white,
+.twitter_white{
+  display: none;
+}
+
+/* ===========================================
+contact
+=========================================== */
+
+#contact {
+  position: relative;
+  padding: 15% 0 0 0;
+}
+
+.triangle__4 {
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  border-top: 150px solid #dfd8cb;
+  border-right: 100vw solid transparent;
+}
+
+.contact-wrapper__ttl {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.contact-wrapper__flex {
+  display: flex;
+}
+
+.contact-wrapper__flex__item1 {
+  flex: 1 1;
+  background-image: url(../img/flower2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+.contact-wrapper__flex__item2 {
+  flex: 1 1;
+  background-color: #dfd8cb;
+}
+
+.contact-wrapper__flex__item2__box {
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  margin: 10% 0 10% 10%;
+}
+
+.contact-wrapper__flex__item2__box__txt {
+  margin: 10% 0;
+}
+
+.contact-wrapper__flex__item2__box__triangle {
+  width: 100px;
+  border-top: 50px solid #bfa678;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+
+/* ===========================================
+footer
+=========================================== */
+
+#footer {
+  background-color: #733d29;
+  opacity: 0.9;
+  padding: 3% 0;
+}
+
+.footer-wrapper__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* circle3 4 に対して */
+}
+
+.footer-wrapper__flex__item1__mobile{
+  display: none;
+}
+
+.footer-wrapper__flex__item1 h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.circle__3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d9ccb4;
+  position: absolute;
+  top: -10%;
+  left: -2%;
+  z-index: -1;
+}
+
+.circle__4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #bfa678;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  z-index: -1;
+}
+
+.footer-wrapper__flex__item2__txt {
+  color: white;
+  line-height: 1.6;
+}
+
+.footer-wrapper__flex__item3{
+  width: 25%;
+}
+
+#footer .instagram {
+  width: 70px;
+  height: 70px;
+}
+
+#footer .twitter {
+  margin-left: 2%;
+  width: 70px;
+  height: 70px;
+}
+
+.footer-wrapper__flex__item4__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d9ccb4;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* ===========================================
+レスポンシブ max-width:750px
+=========================================== */
+
+@media screen and (max-width: 750px) {
+
+  #contact {
+    padding: 12% 0 30% 0;
+  }
+
+  .contact-wrapper__flex__item1 {
+    width: 45%;
+    position: relative;
+    top: 100px;
+    left: 10%;
+  }
+
+  .contact-wrapper__flex__item2 {
+    padding-top: 30px;
+    width: 45%;
+    position: relative;
+    right: 10%;
+  }
+
+  .contact-wrapper__flex__item2__box {
+    width: unset;
+    margin: unset;
+  }
+
+  .contact-wrapper__flex__item2__box__triangle {
+    width: 50px;
+    border-top: 25px solid #bfa678;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+  }
+
+  .footer-wrapper__flex {
+    display: block;
+  }
+
+  .circle__3,
+  .circle__4,
+  .footer-wrapper__flex__item1 h1 {
+    display: none;
+  }
+
+  .footer-wrapper__flex__item1__mobile {
+    display: inline-block;
+  }
+
+  .footer-wrapper__flex__item3 {
+    width: 50%;
+  }
+
+  .footer-wrapper__flex__item4 {
+    position: relative;
+  }
+
+  .footer-wrapper__flex__item4__circle {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+  }
+}
+
+/* ===========================================
+レスポンシブ max-width:750px ハンバーガーメニュー
+=========================================== */
+
+@media screen and (max-width: 750px) {
+  header .drawer {
+    visibility: visible;
+    width: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-top: solid 4px #000;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  header .drawer::before,
+  header .drawer::after {
+    content: "";
+    display: block;
+    width: 24px;
+    background: #000;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+  }
+
+  header .drawer::before {
+    top: 6px;
+  }
+
+  header .drawer::after {
+    top: 15px;
+  }
+
+  body.nav-open header .drawer {
+    border-top: 0;
+  }
+
+  body.nav-open header .drawer::before {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+  body.nav-open header .drawer::after {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  /* ===========================================
+  ハンバーガーメニュー表示の時の画面
+  =========================================== */
+
+  #header .header-wrapper__menu {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: #733D29;
+  }
+
+  #header .header-wrapper__menu__list {
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  #header .header-wrapper__menu__list__item {
+    color: white;
+    margin: 1% auto;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  .instagram_white,
+  .twitter_white{
+    display: inline-block;
+  }
+
+  .instagram_black,
+  .twitter_black{
+    display: none;
+  }
+
+
+
+}

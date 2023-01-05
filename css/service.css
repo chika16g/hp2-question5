@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* ===========================================
+service
+=========================================== */
+
+#service{
+  margin-bottom: 10%;
+}
+
+.service-wrapper__ttl{
+  text-align: center;
+  margin-bottom: 8%;
+}
+
+h2{
+  font-size: 2rem;
+  font-family: san-serif;
+}
+
+.__pic1{
+  background: url(../img/service1.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.__pic2{
+  background: url(../img/service2.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.__pic3{
+  background: url(../img/service3.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+.service-wrapper__list__item{
+  position: relative;  /* list item box(テキスト)にかかっている */
+  overflow: hidden;
+  margin-bottom: 3%;
+  box-shadow: 10px 10px 20px #ddd;
+}
+
+.service-wrapper__list__item__pic{
+  position: relative;
+  width: 100%;
+  height: 30vh;
+}
+
+.service-wrapper__list__item__pic::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  transform: rotate(13deg);
+  right: -40%;
+  top: -10%;
+}
+
+.service-wrapper__list__item__box{
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  width: 40%;
+}
+
+.service-wrapper__list__triangle{
+  width: 100px;
+  border-top: 50px solid #BFA678;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+

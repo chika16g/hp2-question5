@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* ===========================================
+contact
+=========================================== */
+
+#contact{
+  margin-bottom: 10%;
+}
+
+.contact-wrapper__ttl{
+  margin-bottom: 10%;
+}
+
+.contact-wrapper__form{
+  background-color: #DFD8CB;
+  padding: 8%;
+  text-align: center;
+}
+
+.contact-wrapper__form__box{
+  display: flex;
+  margin-bottom: 10%;
+}
+
+.contact-wrapper__form__box__ttl{
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  padding-top: 8px;
+}
+
+.contact-wrapper__form__box__input{
+  border: none;
+  width: 70%;
+  height: 30px;
+}
+
+.contact-wrapper__form__box__area{
+  border: none;
+  width: 70%;
+  height: 200px;
+}
+
+.btn{
+  all: unset;
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 16px 64px;
+}
+
+.btn:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}

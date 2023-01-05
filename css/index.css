@@ -1,0 +1,679 @@
+@charset "UTF-8";
+
+/* ===========================================
+header
+=========================================== */
+
+.header-wrapper__ttl__mobile {
+  display: none;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../img/top.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; /* h1(header-wrapper__ttl)にかかっている */
+}
+
+.header-wrapper__ttl {
+  position: absolute;
+  right: 1%;
+  bottom: 40%;
+  z-index: 2;
+}
+
+.circle__1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #d9ccb4;
+  position: absolute;
+  top: 35%;
+  right: 15%;
+  z-index: 1;
+}
+
+.circle__2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #bfa678;
+  position: absolute;
+  top: 55%;
+  right: -5%;
+  z-index: 1;
+}
+
+/* ===========================================
+menu
+=========================================== */
+
+#menu {
+  background-color: #733d29;
+  position: relative; /* triangle__1にかかっている */
+}
+
+.triangle__1 {
+  position: absolute;
+  z-index: 1;
+  border-top: 150px solid #733d29;
+  border-right: 100vw solid transparent;
+}
+
+.menu-wrapper {
+  max-width: 750px;
+}
+
+.menu-wrapper__list {
+  padding: 2% 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-wrapper__list__item {
+  margin-left: 3%;
+  color: white;
+}
+
+.menu-wrapper__list__item:first-child {
+  margin-left: unset;
+}
+
+/* ===========================================
+about
+=========================================== */
+
+#about {
+  background-color: #dfd8cb;
+  padding: 15% 0 1% 0;
+}
+
+.about-wrapper {
+  text-align: center;
+}
+
+.about-wrapper__box {
+  margin: 0 auto;
+  max-width: 750px;
+  height: 250px;
+  border: 1px solid #000;
+}
+
+.about-wrapper__box__ttl {
+  display: inline-block;
+  padding: 5px;
+  background-color: #dfd8cb;
+  position: relative;
+  top: -40px;
+}
+
+.about-wrapper__box .view-more {
+  margin: 3% 0;
+}
+
+/* ===========================================
+service
+=========================================== */
+
+#service {
+  position: relative; /* triangle__2にかかっている */
+  padding: 15% 0 1% 0;
+}
+
+.triangle__2 {
+  position: absolute;
+  z-index: 1;
+  top: -1%;
+  border-top: 150px solid #dfd8cb;
+  border-right: 100vw solid transparent;
+}
+
+.service-wrapper__ttl {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.service-wrapper__flex {
+  display: flex;
+  justify-content: center;
+}
+
+.service-wrapper__flex__item1 {
+  background-color: rgb(223, 215, 215);
+  height: 300px;
+  flex: 1 1 auto;
+  background-image: url(../img/flower1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+.service-wrapper__flex__item2 {
+  width: 350px;
+  height: 300px;
+  background-color: #dfd8cb;
+  text-align: center;
+}
+
+.service-wrapper__flex__item2__txt {
+  margin: 17% 0;
+}
+
+.service-wrapper__flex__item3 {
+  height: 300px;
+  flex: 1 1 auto;
+  background-image: url(../img/flower2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+/* ===========================================
+works
+=========================================== */
+
+#works {
+  padding: 5% 0 0 0;
+}
+
+#works {
+  position: relative;
+}
+
+.works-wrapper {
+  max-width: 850px;
+  text-align: center;
+}
+
+.works-wrapper__ttl {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.works-wrapper__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-wrapper__flex__item {
+  height: auto;
+  border: 1px solid #000;
+  padding: 12px 16px 24px 16px;
+}
+
+.works-wrapper__flex__item__txt {
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.footcare {
+  width: 240px;
+}
+
+.works-wrapper .view-more {
+  margin-top: 5%;
+}
+
+.triangle__3 {
+  position: absolute;
+  z-index: 1;
+  border-top: 150px solid #fff;
+  border-right: 100vw solid transparent;
+}
+
+/* ===========================================
+price
+=========================================== */
+
+#price {
+  background-color: #dfd8cb;
+  padding: 15% 0 1% 0;
+}
+
+.price-wrapper {
+  text-align: center;
+}
+
+.price-wrapper__box {
+  margin: 0 auto;
+  max-width: 750px;
+  height: 280px;
+  border: 1px solid #000;
+}
+
+.price-wrapper__box__ttl {
+  display: inline-block;
+  padding: 5px;
+  background-color: #dfd8cb;
+  position: relative;
+  top: -40px;
+}
+
+.price-wrapper__box .view-more {
+  margin: 3% 0;
+}
+
+/* ===========================================
+contact
+=========================================== */
+
+#contact {
+  position: relative;
+  padding: 15% 0 0 0;
+}
+
+.triangle__4 {
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  border-top: 150px solid #dfd8cb;
+  border-right: 100vw solid transparent;
+}
+
+.contact-wrapper__ttl {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.contact-wrapper__flex {
+  display: flex;
+}
+
+.contact-wrapper__flex__item1 {
+  flex: 1 1;
+  background-image: url(../img/flower2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+.contact-wrapper__flex__item2 {
+  flex: 1 1;
+  background-color: #dfd8cb;
+}
+
+.contact-wrapper__flex__item2__box {
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  margin: 10% 0 10% 10%;
+}
+
+.contact-wrapper__flex__item2__box__txt {
+  margin: 10% 0;
+}
+
+.contact-wrapper__flex__item2__box__triangle {
+  width: 100px;
+  border-top: 50px solid #bfa678;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+
+/* ===========================================
+footer
+=========================================== */
+
+#footer {
+  background-color: #733d29;
+  opacity: 0.9;
+  padding: 3% 0;
+}
+
+.footer-wrapper__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* circle3 4 に対して */
+}
+
+.footer-wrapper__flex__item1__mobile {
+  display: none;
+}
+
+.footer-wrapper__flex__item1 h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+.circle__3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d9ccb4;
+  position: absolute;
+  top: -10%;
+  left: -2%;
+  z-index: -1;
+}
+
+.circle__4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #bfa678;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  z-index: -1;
+}
+
+.footer-wrapper__flex__item2__txt {
+  color: white;
+  line-height: 1.6;
+}
+
+.footer-wrapper__flex__item3 {
+  width: 25%;
+}
+
+#footer .instagram {
+  width: 70px;
+  height: 70px;
+}
+
+#footer .twitter {
+  margin-left: 2%;
+  width: 70px;
+  height: 70px;
+}
+
+.footer-wrapper__flex__item4__circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d9ccb4;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* ===========================================
+レスポンシブ max-width:950px
+=========================================== */
+@media screen and (max-width: 950px) {
+  .header-wrapper {
+    overflow: hidden;
+  }
+
+  .triangle__1,
+  .triangle__2,
+  .triangle__3,
+  .triangle__4 {
+    display: none;
+  }
+
+  #menu {
+    padding-bottom: 10%;
+  }
+
+  #about {
+    padding: 12% 0 12% 0;
+  }
+
+  #service {
+    padding: 12% 0 12% 0;
+  }
+
+  #works {
+    padding: 12% 0 12% 0;
+  }
+
+  #price {
+    padding: 12% 0 12% 0;
+  }
+
+  #contact {
+    position: relative;
+    padding: 12% 0 0 0;
+  }
+}
+
+/* ===========================================
+レスポンシブ max-width:850px
+=========================================== */
+@media screen and (max-width: 850px) {
+  .works-wrapper {
+    max-width: 560px;
+  }
+
+  .none3 {
+    display: none;
+  }
+}
+
+/* ===========================================
+レスポンシブ max-width:750px ハンバーガーメニュー
+=========================================== */
+
+@media screen and (max-width: 750px) {
+  header .drawer {
+    visibility: visible;
+    width: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-top: solid 4px #000;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  header .drawer::before,
+  header .drawer::after {
+    content: "";
+    display: block;
+    width: 24px;
+    background: #000;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+  }
+
+  header .drawer::before {
+    top: 6px;
+  }
+
+  header .drawer::after {
+    top: 15px;
+  }
+
+  body.nav-open header .drawer {
+    border-top: 0;
+  }
+
+  body.nav-open header .drawer::before {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+  body.nav-open header .drawer::after {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  /* ===========================================
+  ハンバーガーメニュー表示の時の画面
+  =========================================== */
+
+  #menu .menu-wrapper {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: #733d29;
+  }
+
+  #menu .menu-wrapper__list {
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  #menu .menu-wrapper__list__item {
+    margin: 1% auto;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
+/* ここから下の部分で迷っています */
+
+  #menu .twitter_list {
+    position: relative;
+  }
+
+  #menu .twitter_list a {
+    position: absolute;
+    bottom: 0px;
+    right: 60px;
+  }
+}
+
+/* ===========================================
+レスポンシブ max-width:750px
+=========================================== */
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 80%;
+  }
+
+  .header-wrapper {
+    height: 35vh;
+    background-size: cover;
+    position: relative; /* h1(header-wrapper__ttl)にかかっている */
+  }
+
+  .header-wrapper__ttl__mobile {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+
+  .header-wrapper__ttl__mobile img {
+    width: 250px;
+  }
+
+  .header-wrapper__ttl,
+  .circle__1,
+  .circle__2 {
+    display: none;
+  }
+
+  #menu {
+    padding-bottom: 0;
+  }
+
+  #service {
+    padding: 12% 0 22% 0;
+  }
+
+  .service-wrapper__flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .service-wrapper__flex__item1 {
+    width: 45%;
+    position: relative;
+    top: 100px;
+    left: 10%;
+  }
+
+  .service-wrapper__flex__item2 {
+    padding-top: 30px;
+    width: 45%;
+    position: relative;
+    right: 10%;
+  }
+
+  .service-wrapper__flex__item3 {
+    display: none;
+  }
+
+  .none2 {
+    display: none;
+  }
+
+  .works-wrapper__flex a {
+    margin: 0 auto;
+  }
+
+  .footcare {
+    max-width: 500px;
+  }
+
+  #contact {
+    padding: 12% 0 30% 0;
+  }
+
+  .contact-wrapper__flex__item1 {
+    width: 45%;
+    position: relative;
+    top: 100px;
+    left: 10%;
+  }
+
+  .contact-wrapper__flex__item2 {
+    padding-top: 30px;
+    width: 45%;
+    position: relative;
+    right: 10%;
+  }
+
+  .contact-wrapper__flex__item2__box {
+    width: unset;
+    margin: unset;
+  }
+
+  .contact-wrapper__flex__item2__box__triangle {
+    width: 50px;
+    border-top: 25px solid #bfa678;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+  }
+
+  .footer-wrapper__flex {
+    display: block;
+  }
+
+  .circle__3,
+  .circle__4,
+  .footer-wrapper__flex__item1 h1 {
+    display: none;
+  }
+
+  .footer-wrapper__flex__item1__mobile {
+    display: inline-block;
+  }
+
+  .footer-wrapper__flex__item3 {
+    width: 50%;
+  }
+
+  .footer-wrapper__flex__item4 {
+    position: relative;
+  }
+
+  .footer-wrapper__flex__item4__circle {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+  }
+}
